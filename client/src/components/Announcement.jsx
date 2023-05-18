@@ -8,6 +8,7 @@ padding:5px;
 display:flex;
 text-align:center;
 justify-content:center;
+align-item:center;
 font-size:14px; 
 font-weight:bold;
 `

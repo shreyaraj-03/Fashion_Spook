@@ -16,21 +16,21 @@ const Products = ({cat,filter,sort}) =>
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState({});
 
-  useEffect(() =>{
-    // console.log("gvygvhb");
-    const getProducts = async () =>{
-      console.log("gvygvhb");
-      try{
-        // const res = await axios.get("http:localhost:500/api/products");
-        // console.log(res);
-        console.log("gvygvhb");
-      }
-      catch(err)
-      {
-        console.log("hi");
-      }
-    }
-  }, [cat])
+  // useEffect(() =>{
+  //   // console.log("gvygvhb");
+  //   const getProducts = async () =>{
+  //     console.log("gvygvhb");
+  //     try{
+  //       // const res = await axios.get("http:localhost:500/api/products");
+  //       // console.log(res);
+  //       console.log("gvygvhb");
+  //     }
+  //     catch(err)
+  //     {
+  //       console.log("hi");
+  //     }
+  //   }
+  // }, [cat])
 
 
   return (
