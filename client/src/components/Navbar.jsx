@@ -64,23 +64,20 @@ const Navbar = () => {
   return (
     <Containers>
       <Wrapper>
-
         <Left>
-
           <Language>
             EN
           </Language>
-
           <SearchContainer>
             <Input/>
             <Search/>
           </SearchContainer>
         </Left>
-        <Center><Logo>HARSHU</Logo></Center>
+        <Center><Logo>Fashion Spook</Logo></Center>
         <Right>
-
-          <MenuItems>Register</MenuItems>
-          <MenuItems>Sign In</MenuItems>
+        <MenuItems><a href='/design'> Designs</a></MenuItems>
+          <MenuItems><a href='register'>Register</a></MenuItems>
+          <MenuItems><a href='login'>Sign In</a></MenuItems>
           <MenuItems>
           <Badge badgeContent={4} color="primary">
               <ShoppingCartOutlined/>

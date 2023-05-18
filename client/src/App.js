@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 import ProductList from "./pages/ProductList";
 import Register from "./pages/Register";
-
+import Design from "./pages/Design"
 
 
 function App() {
@@ -29,6 +29,9 @@ function App() {
         </Route>
         <Route path="/cart">
           <Cart/>
+        </Route>
+        <Route path="/design">
+          <Design/>
         </Route>
         <Route path="/login">
           {/* {user ? <Redirect to="/"/>: <Login/>} */}
