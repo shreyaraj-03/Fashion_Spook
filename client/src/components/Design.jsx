@@ -1,4 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import styled from 'styled-components'
+import { custom } from '../data'
+import Product from './Product'
+import axios from 'axios'
+
+const Container= styled.div`
+    display:flex;
+`;
+
+const Left= styled.div`
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    padding: 20px;
+`;
+
+const Right= styled.div`
+    flex:1;
+    padding:20px;
+    flex-direction:column;
+`;
+
 
 const Design = () => {
   return (
@@ -21,8 +43,71 @@ const Design = () => {
 
 
 
+    <Container>
+      <Left>
 
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+            <label class="form-check-label" for="flexRadioDefault1">
+              Saree
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
+            <label class="form-check-label" for="flexRadioDefault2">
+              T-shirt
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Dress
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Top
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Jacket
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Long Skirt
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Shirt
+            </label>
+          </div>
+
+
+      </Left>
+      <Right>
+      <div class="form-outline">
+        <input type="number" id="typeNumber" class="form-control" />
+        <label class="form-label" for="typeNumber">Length of cloth required(in m).</label>
+      </div>
+      <div class="form-outline">
+        <input type="number" id="typeNumber" class="form-control" />
+        <label class="form-label" for="typeNumber">Approximate area of cloth to be customized(in cm^2).</label>
+      </div>
+
+      <input type="file" class="form-control" id="customFile" />
+      <label class="form-label" for="customFile">Upload your design.</label>
+      </Right>
+    </Container>
+
+
       </div>
     </div>
   </div>
@@ -39,6 +124,62 @@ const Design = () => {
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
       <div class="card-body">
+
+      <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+  <label class="form-check-label" for="flexCheckDefault">
+      Pink
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"/>
+  <label class="form-check-label" for="flexCheckChecked">
+    Blue
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"/>
+  <label class="form-check-label" for="flexCheckChecked">
+    Black
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"/>
+  <label class="form-check-label" for="flexCheckChecked">
+    Red
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"/>
+  <label class="form-check-label" for="flexCheckChecked">
+    Gray
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"/>
+  <label class="form-check-label" for="flexCheckChecked">
+    White
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"/>
+  <label class="form-check-label" for="flexCheckChecked">
+    Yellow
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"/>
+  <label class="form-check-label" for="flexCheckChecked">
+    Green
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"/>
+  <label class="form-check-label" for="flexCheckChecked">
+    Voilet
+  </label>
+</div>
+
 
 
   </div>
@@ -66,19 +207,54 @@ const Design = () => {
       <div class="card-body">
 
 
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+        <label class="form-check-label" for="flexRadioDefault1">
+          Cotton
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
+        <label class="form-check-label" for="flexRadioDefault2">
+         Polyster
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
+        <label class="form-check-label" for="flexRadioDefault2">
+         Nylon
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
+        <label class="form-check-label" for="flexRadioDefault2">
+         Welvet
+        </label>
+      </div>
 
 
+      </div>
+    </div>
+  </div>
 
 
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Estimated price
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
 
 
-
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
       </div>
     </div>
   </div>
 </div>
-
   )
 }
 
