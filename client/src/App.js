@@ -1,7 +1,11 @@
+
+import React from 'react';
 import Cart from "./pages/Cart";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Product from "./pages/Product";
+import Success from './pages/Success';
+import Pay from './pages/Pay';
 import {
   BrowserRouter as Router,
   Switch,
@@ -38,10 +42,9 @@ function App() {
           {/* {user ? <Redirect to="/"/>: <Register/>} */}
           <Register/>
         </Route>
-
       </Switch>
     </Router>
-);
+  );
   }
 
 export default App;
