@@ -79,7 +79,7 @@ const Footer = () => {
   return (
     <Container>
        <Left>
-            <Logo>HARSHU</Logo>
+            <Logo>Fashion Spook</Logo>
             <Desc>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                 Blanditiis laboriosam nam cupiditate, aspernatur ullam 
                 adipisci quo magnam. Vitae odio assumenda ratione, saepe, 

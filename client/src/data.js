@@ -92,3 +92,43 @@ export const popularProducts = [
     },
 
 ];
+
+
+
+export const custom = [
+    {
+        id:1,
+        img:"https://www.calzedonia.com/dw/image/v2/BJHW_PRD/on/demandware.static/-/Sites-CAL_EC_COM/default/dw7f3c396b/images/MIP0673182-FI.jpg?sw=1200&sfrm=jpeg",
+        type:"jeans",
+    },
+    {
+        id:2,
+        img:"https://m.media-amazon.com/images/I/71Q7a6rR3WL._UX679_.jpg",
+        type:"saree",
+    },
+    {
+        id:3,
+        img:"https://cdn.shopify.com/s/files/1/0012/8935/5319/products/MSHCT1063RLMainmage.jpg?v=1633752607",
+    },
+    {
+        id:4,
+        img:"https://contents.mediadecathlon.com/p2014172/a6fc0d55a64015ddba8671141a49cdb6/p2014172.jpg?format=auto&quality=70&f=650x0",
+    },
+    {
+        id:5,
+        img:"https://m.media-amazon.com/images/I/510PRrdDATL._UX679_.jpg",
+    },
+    {
+        id:6,
+        img:"https://m.media-amazon.com/images/I/812K12a14FL._UX679_.jpg",
+    },
+    {
+        id:7,
+        img:"https://m.media-amazon.com/images/I/81kDI4r4jkL._UY879_.jpg",
+    },
+    {
+        id:8,
+        img:"https://m.media-amazon.com/images/I/71vvWikgMNL._SY741._SX._UX._SY._UY_.jpg",
+    },
+
+];
