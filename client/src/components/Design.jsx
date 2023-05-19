@@ -78,7 +78,7 @@ const Design = () => {
     </div>
   </div>
 </div>
-    </div>
+
   )
 }
 
